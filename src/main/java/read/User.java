@@ -9,12 +9,12 @@ class User {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "{\n" +
-                "  \"name\": \"" + name + "\",\n" +
-                "  \"age\": " + age + ",\n" +
-                "}";
-    }
+//    @Override
+//    public String toString() {
+//        return "{\n" +
+//                "  \"name\": \"" + name + "\",\n" +
+//                "  \"age\": " + age + ",\n" +
+//                "}";
+//    }
 
 }

@@ -15,7 +15,7 @@ public class PhoneNumbersValidator {
 
     private String read(File file) {
 
-        return new FileContentReader().read(new File(file, "phoneNumbers.txt"));
+        return FileContentReader.read(new File(file, "phoneNumbers.txt"));
     }
 
     private void validate(String str) {

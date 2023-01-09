@@ -23,7 +23,7 @@ public class JsonPrinter {
 
     private String read(File file) {
 
-        return new FileContentReader().read(new File(file, "users.txt"));
+        return FileContentReader.read(new File(file, "users.txt"));
     }
 
     private void addToList(String content) {
@@ -42,7 +42,7 @@ public class JsonPrinter {
             я не побачив доцільності в використанні цього методу.
             Але якщо цей метод дійсно потрібен цьому класу,
             то буду дуже вдячним, якщо підкажете як би його краще імплементувати сюди
-            за урахуванням властивості FileOutputStream щодо створення нових файлів!
+            з урахуванням властивості FileOutputStream щодо створення нових файлів!
        */
 //    private void createJsonFile(File file) {
 //        File jsonFile = new File(file, "user.json");

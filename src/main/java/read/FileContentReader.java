@@ -5,7 +5,10 @@ import java.util.Scanner;
 import java.util.StringJoiner;
 
 class FileContentReader {
-    public String read(File file) {
+    private FileContentReader() {
+        throw new IllegalStateException("Utility class");
+    }
+    public static String read(File file) {
 
         StringJoiner result = new StringJoiner("\n");
 

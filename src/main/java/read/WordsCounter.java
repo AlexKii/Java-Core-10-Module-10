@@ -15,7 +15,7 @@ public class WordsCounter {
 
     private String read(File file) {
 
-        return new FileContentReader().read(new File(file, "words.txt"));
+        return FileContentReader.read(new File(file, "words.txt"));
     }
 
     private void countAndAddToList(String content) {
